@@ -1,0 +1,52 @@
+<!doctype html>
+
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Jogo da Velha</title>
+		<link rel="stylesheet" href="estilo.css" />
+		<script src="velha.js"></script>
+	</head>
+	<body>
+		<div id="boas-vindas">
+			<h2>Seja bem-vindo ao jogo, clique para iniciar</h2>
+			<input type="button" onclick="js:inicia()" value="iniciar">
+		</div>
+		
+	<div id="jogo">
+		<div id="grade">
+			<button id="bt_0_0" onclick="js:clicado(this)" />
+			<button id="bt_0_1" onclick="js:clicado(this)" />
+			<button id="bt_0_2" onclick="js:clicado(this)" />
+			
+			<button id="bt_1_0" onclick="js:clicado(this)" />
+			<button id="bt_1_1" onclick="js:clicado(this)" />
+			<button id="bt_1_2" onclick="js:clicado(this)" />
+			
+			<button id="bt_2_0" onclick="js:clicado(this)" />
+			<button id="bt_2_1" onclick="js:clicado(this)" />
+			<button id="bt_2_2" onclick="js:clicado(this)" />
+		</div>
+		<br />
+		<div id="timer">20</div>
+		<div id="gameover"></div>
+		<div>
+			<div >
+				<h5>Vitórias X:</h5> <h2 id="px">0</h2>
+			</div>
+			<div >
+				<h5>Vitórias O:</h5> <h2 id="po">0</h2>
+			</div>
+			<div>
+				<h5>Empates:</h5> <h2 id="pe">0</h2>
+			</div>
+		</div>
+		
+		<div id="reiniciar">
+			<button id="bt_3_0" onclick="js:depoisqueacabareinicia()" > reiniciar </button>
+		<div>
+		<input type="button" onclick="js:desfazendo()" value="desfazer"/>
+		
+		</div>
+	</body>
+</html>

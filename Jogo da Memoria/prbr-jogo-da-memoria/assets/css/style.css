@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Righteous", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #eeeeee;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  width: 140px;
+  height: 140px;
+  position: relative;
+  transform-style: preserve-3d; /* faz com que indentifique o flip deixando o card 3d */
+  transition: transform 0.5s;
+
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -webkit-transition: transform 0.5s;
+  -moz-transition: transform 0.5s;
+}
+
+.icon {
+  width: 110px;
+  height: 110px;
+}
+
+.card_back,
+.card_front {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.5);
+  backface-visibility: hidden; /* esconde quando inverte eixo */
+
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+}
+
+.flip {
+  transform: rotateY(180deg); /* inverte o eixo Y */
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+}
+
+.card_back {
+  background-color: #101c2c;
+  /* display: none; */
+}
+
+.card_front {
+  transform: rotateY(180deg); /* inicializa com o eixo Y invertido*/
+  background-color: #101c2c;
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+}
+
+.mensagem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 40px;
+  margin: 20px;
+  border-radius: 10px;
+  background-color: #111111;
+  text-align: center;
+}
+
+.display {
+  display: flex;
+  gap: 5px;
+}
+
+#gameStart {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #ffffff;
+  font-size: 2rem;
+  display: flex; /* none play game */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 0;
+}
+
+#start {
+  font-family: "Righteous", sans-serif;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: rgb(238, 215, 12);
+  border: none;
+  border-radius: 5px;
+}
+
+#gameOver {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #ffffff;
+  font-size: 2rem;
+  display: none; /* flex sobrepõe a tela */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 0;
+}
+
+#restart {
+  font-family: "Righteous", sans-serif;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: rgb(238, 215, 12);
+  border: none;
+  border-radius: 5px;
+}
+
+#gameBoard {
+  max-width: 960px;
+  display: grid;
+  grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 1400px) {
+  .card {
+    width: 120px;
+    height: 120px;
+  }
+  .icon {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .card {
+    width: 110px;
+    height: 110px;
+  }
+  .icon {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 800px) {
+  #gameBoard {
+    grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+    gap: 15px;
+  }
+  .card {
+    width: 90px;
+    height: 90px;
+  }
+  .icon {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 600px) {
+  #gameBoard {
+    gap: 10px;
+  }
+  .card {
+    width: 70px;
+    height: 70px;
+  }
+  .icon {
+    width: 50px;
+    height: 50px;
+  }
+}

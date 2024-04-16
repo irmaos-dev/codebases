@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+*{
+    font-family: 'PT Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    background-color: #292C34;
+    text-align: center;
+}
+
+/* Header */
+header{
+    height: 90px;
+    background-color: white;
+}
+
+header > h1{
+    padding-top: 20px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* Scoreboard / Placar */
+.scoreboard{
+    position: relative;
+    color: #ffffff;
+    width: 270px;
+    margin: 10px auto 60px auto;;
+}
+
+#scores{
+    font-size: 50px;
+    border: 3px solid white;
+    width: 270px;
+    height: 100px;
+    padding: 10px;
+}
+
+#userScore{
+    padding-right: 20px;
+}
+
+#compScore{
+    padding-left: 20px;
+}
+
+.scoreLabel{
+    background-color: #ff7070;
+    width: 50px;
+}
+
+#userLabel{
+    position: absolute;
+    top: 40px;
+    left: -25px;
+}
+
+#compLabel{
+    position: absolute;
+    top: 40px;
+    right: -25px;
+}
+
+/* Resultado */
+.result{
+    color: #ffffff;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+/* Botões / Imagens */
+.buttons{
+    padding: auto;
+    margin: auto;
+}
+
+.buttons > img {
+    height: 150px;
+    width: 150px;
+    margin: 15px;
+    border: 3px solid white;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.buttons > img:hover{
+    background-color: #1c1e23;
+}
+
+.buttons > img:active{
+    border: 3px solid orange;
+}
+
+/* footer */
+footer {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* feedbacks resultado */
+.green-glow {
+    border: 4px solid #4dcc7d !important;
+    box-shadow: 0 0 10px #31b43a;
+}
+
+.red-glow {
+    border: 4px solid #fc121b !important;
+    box-shadow: 0 0 10px #d01115;
+}
+
+.gray-glow {
+    border: 4px solid #464647 !important;
+    box-shadow: 0 0 10px #25292b;
+}
+
+/* botões */
+
+.buttonWrap {
+    padding-top: 20px;
+}
+
+.resetButton {
+    padding: 0 30px;
+    border-radius: 100px;
+    color: #ffffff;
+    font-family: arial;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 40px;
+    text-transform: none;
+    background-color: #ff7070;
+    border: none;
+    cursor: pointer;
+}
+
+  .resetButton:focus {
+      outline: none;
+  }
