@@ -1,0 +1,53 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700);
+@import url(reset.css);
+
+body { font-family:'Raleway', Verdana, Tahoma, sans-serif;  font-size:12px; color:#333; line-height:16px; overflow:none; }
+
+#game { position:absolute; width:80%; height:100%; background-color:#fff; background-image:url(../imgs/table.jpg); background-size:cover; }
+#statusContainer { min-width:260px; background-color:#f5f5f5; width:20%; height:100%; position:fixed; top:0; right:0; border-left:1px solid #ccc; }
+#statusContainer div { position:relative; }
+#statusContainer div div { padding:15px; }
+#score { height:10%; min-height:90px; top:0px; border-bottom:1px solid #ccc; }
+#status { overflow-y:scroll; height:80%; }
+#status p { margin:10px 0; }
+#status p.old { color:#999; }
+#controls { bottom:0px; height:10%; border-top:1px solid #ccc; }
+
+.resultDiv { display: block; width: 70px; float: left; text-align: center; }
+.result { font-weight: bold; font-size: 32px; }
+.result.player { color:#58a770; }
+.result.computer { color:#ff5d5d; }
+
+.overlay{ position:absolute; top:0; left:0; z-index:10; width:100%; height:100%; background-color: rgba(0,0,0,0.5); }
+#gameWarnings { position:absolute; top:50%; left:0; z-index: 11; width:100%; height:200px; margin:auto; margin-top:-100px; text-align:center; font-size:48px; color:#fff; }
+
+.button { padding:12px; color:#fff; background-color:#45a1c3; font-size:14px; font-weight:700; text-decoration:none; text-align:center; border-radius:3px; }
+.button:hover { background-color:#3d95b5; }
+.block { display:block; }
+
+#computerHand { position:absolute; top:-45px; left:25%; }
+#playerHand { position:absolute; bottom:0; left:25%; }
+.card { border:7px solid transparent; float:left; margin-right:10px; display:block; height:160px !important; width:119px !important; cursor:pointer; border-radius:3px; }
+.card img { width:100%; height:100%; }
+#playerHand .card:hover { border:7px solid #4e81be; }
+
+#playedCards { position: absolute; top: 200px; left: 100px; }
+#playedCards div { width:200px; height:200px; }
+#playedCards div .card { position:absolute; }
+#playedCards div .card:last-child {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);   
+}
+.playedRound1, .playedRound2, .playedRound3 { float: left; }
+
+#manilha { color: #fff; position:absolute; bottom: 200px; left:-100px; font-weight: bold; }
+#manilha .horizontalCard {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);  
+}
