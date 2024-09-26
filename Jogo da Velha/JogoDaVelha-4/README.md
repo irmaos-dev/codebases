@@ -1,3 +1,7 @@
+## Repositório Original
+
+https://github.com/dsboger-zz/JogoDaVelha
+
 # Jogo da Velha
 
 Funcionalidades do roadmap para a próxima iteração:

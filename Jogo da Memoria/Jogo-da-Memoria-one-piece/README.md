@@ -1,3 +1,7 @@
+## Repositório Original
+
+https://github.com/machado001/Jogo-da-Memoria
+
 <h1>Getting Started - Jogo da Memória</h1>
 <br>
 <p>Eis um joguinho da memória . Também foi o primeiro projeto meio complicadinho que consegui resolver por conta própria, foi com ele que tive os primeiros feelings de como é ser um programador: Saber pesquisar, ficar horas num erro bobo e resolvê-lo em menos de uma linha, e por ai vai... </p>
@@ -5,7 +9,6 @@
 <p><strong>Feito com Javascript Vanilla; Sem react aqui.<strong/></p>
 
 <img width="300px" src="https://user-images.githubusercontent.com/101916850/186375980-29a3b310-2869-45b0-852a-46cc566484e2.PNG">
-
 
 <h2>Neste código, tu encontrarás:</h2>
 
@@ -31,4 +34,3 @@
 <li>Media queries;</li>
 
 </ul>
-

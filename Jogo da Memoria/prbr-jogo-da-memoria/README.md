@@ -1,3 +1,7 @@
+## Repositório Original
+
+https://github.com/brseghese/prbr-jogo-da-memoria
+
 # Jogo da Memória 💭
 
 Repositório do projeto **Jogo da Memória** proposto no curso de Desenvolvimento Web Full Stack (Programdor Br).
